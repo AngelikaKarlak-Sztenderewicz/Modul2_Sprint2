@@ -1,11 +1,19 @@
 import Button from "./Button";
 
-const Questions = ({ question, answers, onAnswerClick }) => {
+const Questions = ({ question, answers, onAnswerClick, questionNumber }) => {
   return (
     <section>
-      <h2>{question}</h2>
+      <h2 className="question">
+        {" "}
+        Pytanie {questionNumber}: {question}{" "}
+      </h2>
+
       {answers.map((answer, index) => (
-        <Button onClick={() => onAnswerClick(index)} key={index} text={answer} />
+        <Button
+          onClick={() => onAnswerClick(index)}
+          key={index}
+          text={answer}
+        />
       ))}
     </section>
   );

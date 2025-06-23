@@ -18,6 +18,10 @@ body {
   min-height: 100vh;
 }
 
+h2 {
+  text-align: center;
+}
+
 button {
   width: 400px;
   border-radius: 8px;
@@ -69,7 +73,6 @@ section {
     width: 320px;
   }
   h2 {
-    text-align: center;
     width: 80%;
   }
 }

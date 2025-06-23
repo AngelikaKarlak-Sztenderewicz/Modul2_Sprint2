@@ -48,6 +48,7 @@ const App = () => {
           question={currentQuestion.question}
           answers={currentQuestion.answers.map((a) => a.text)}
           onAnswerClick={handleAnswerClick}
+          questionNumber={currentIndex + 1}
         />
       ) : (
         <section>
@@ -70,7 +71,7 @@ const App = () => {
               <div key={i}>
                 <strong className="question">
                   {" "}
-                  Pytanie {[i + 1]}: {quizQuestions[i].question}
+                  Pytanie {i + 1}: {quizQuestions[i].question}
                 </strong>
                 <br />
 
